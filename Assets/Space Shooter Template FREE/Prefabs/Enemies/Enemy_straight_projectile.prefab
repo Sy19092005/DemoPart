@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 50267448758737772}
   - component: {fileID: 5517867987852018686}
   - component: {fileID: 952349690876824977}
+  - component: {fileID: 2295731710878113402}
   m_Layer: 0
   m_Name: Enemy_straight_projectile
   m_TagString: Enemy
@@ -213,6 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   speed: 2
+  damageToPlayer: 1
 --- !u!114 &952349690876824977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,4 +227,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504cf820da6680c43a16c118157bef4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 3
+  explosionPrefab: {fileID: 8854237314091094031, guid: 97e243ff0eec7af42851bf6334ef2139,
+    type: 3}
+  defaultHealthPoint: 1
+--- !u!114 &2295731710878113402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373690366928948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea44986e48d13e74e9013c0b85fecff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  health: {fileID: 952349690876824977}
+  damage: 1

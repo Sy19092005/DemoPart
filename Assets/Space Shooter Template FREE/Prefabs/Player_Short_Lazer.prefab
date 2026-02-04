@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2579835033235531580}
   - component: {fileID: 2975966293573578908}
   - component: {fileID: 6317017673907955348}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_Short_Lazer
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -210,3 +210,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   flySpeed: 0
+  damage: 1

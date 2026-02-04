@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 1111603224}
   - component: {fileID: 1111603226}
   - component: {fileID: 1111603225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Short-Lazer-Ship
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -358,7 +358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36bb360669b0a545b93ce92d3d0abe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
-  bulletPrefabs: {fileID: 1239342130}
+  bulletPrefabs: {fileID: 4744876067986513574, guid: 08a21e952ffb7b34ea0c3e681ae65133,
+    type: 3}
   shootingInterval: 0.2
   bulletOffset: {x: 0, y: 0.6, z: 0}
   weaponPower: 1
@@ -375,8 +376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0b3bd9a0b1537c4aab9087fd8981ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 3
-  currentHealth: 0
+  explosionPrefab: {fileID: 2310281672750707779, guid: 3a1cc60b36c0eb84393b9f26d8758d41,
+    type: 3}
+  defaultHealthPoint: 3
 --- !u!50 &1111603225
 Rigidbody2D:
   serializedVersion: 5
@@ -460,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140779886}
   - component: {fileID: 1140779885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,12 +500,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1239342130 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4744876067986513574, guid: 08a21e952ffb7b34ea0c3e681ae65133,
-    type: 3}
-  m_PrefabInstance: {fileID: 1693991320568653908}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1633478141
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +511,7 @@ GameObject:
   - component: {fileID: 1633478142}
   - component: {fileID: 1633478143}
   - component: {fileID: 1633478144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Engine_01_Basic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,18 +619,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4744876067986513574, guid: 08a21e952ffb7b34ea0c3e681ae65133,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744876067986513574, guid: 08a21e952ffb7b34ea0c3e681ae65133,
+        type: 3}
       propertyPath: m_TagString
       value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 8264227608016747891, guid: 08a21e952ffb7b34ea0c3e681ae65133,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 8264227608016747891, guid: 08a21e952ffb7b34ea0c3e681ae65133,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.84
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 8264227608016747891, guid: 08a21e952ffb7b34ea0c3e681ae65133,
         type: 3}
