@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
                 transform.position,
                 transform.rotation
             );
-            Destroy(explosion, 1f);
+            Destroy(explosion, 2f);
         }
 
         Destroy(gameObject);
